@@ -2,14 +2,14 @@
 
 <div align="center">
 
-![Secure 2FA Authenticator Banner](public/icons/icon-128.png)
+<img src="public/icons/icon-128.png" width="100" height="100" alt="Secure 2FA Authenticator Logo" style="border-radius: 22px;" />
 
 ### 🔒 Privacy-First, 100% Offline 2FA Authenticator for Chromium Browsers
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-success.svg)](manifest.json)
-[![100% Offline](https://img.shields.io/badge/Network-100%25%20Offline-brightgreen.svg)](#privacy--security-guarantee)
-[![Zero Telemetry](https://img.shields.io/badge/Telemetry-Zero%20Tracking-purple.svg)](#privacy--security-guarantee)
+[![100% Offline](https://img.shields.io/badge/Network-100%25%20Offline-brightgreen.svg)](#-privacy--security-guarantee)
+[![Zero Telemetry](https://img.shields.io/badge/Telemetry-Zero%20Tracking-purple.svg)](#-privacy--security-guarantee)
 [![Built with React 19](https://img.shields.io/badge/Built%20with-React%2019%20%2B%20TypeScript-61dafb.svg)](package.json)
 [![Release Version](https://img.shields.io/badge/Version-v1.0.0-orange.svg)](https://github.com/mahfujkn/secure-2fa-authenticator/releases)
 
@@ -21,7 +21,7 @@
 
 ## 📖 Overview
 
-**Secure 2FA Authenticator** is a modern, lightweight, privacy-first browser extension for generating RFC 6238 Time-based One-Time Passwords (TOTP) directly in your browser. 
+**Secure 2FA Authenticator** is a modern, lightweight, privacy-first browser extension for generating RFC 6238 Time-based One-Time Passwords (TOTP) directly in your browser.
 
 Unlike traditional authenticators, **Secure 2FA Authenticator** operates completely offline without cloud servers, user accounts, databases, tracking pixels, or remote APIs. Your secrets never leave your device.
 
@@ -42,7 +42,7 @@ Unlike traditional authenticators, **Secure 2FA Authenticator** operates complet
   - Quick eye toggle button and three-dot menu options (*Show Code / Hide Code*).
   - Copying while hidden copies clean numeric OTPs (`482913`) without exposing the code on screen.
 - 🎨 **Modern Security-Focused UI**:
-  - Dark Obsidian (Recommended), Light, and System themes.
+  - Dark Obsidian (Default), Light, and System themes.
   - Compact & Comfortable account list density options.
   - Linear Progress Bar & Circular Ring countdown timers.
   - Pinned Favorites section for frequently accessed accounts.
@@ -55,12 +55,12 @@ Unlike traditional authenticators, **Secure 2FA Authenticator** operates complet
 
 <div align="center">
 
-### 1. Main Authenticator & OTP List (Dark Obsidian Theme)
+### 1. Main Authenticator (Dark Obsidian Theme)
 ![Main Account List](Screenshots/Screenshot%202026-08-15%20163231.png)
 
 ---
 
-### 2. Multi-Key Quick TOTP (Instant Zero-Persistence Generation)
+### 2. Multi-Key Quick TOTP (Instant Zero-Persistence 2FA)
 ![Quick TOTP](Screenshots/Screenshot%202026-08-15%20163258.png)
 
 ---
@@ -75,23 +75,23 @@ Unlike traditional authenticators, **Secure 2FA Authenticator** operates complet
 
 ---
 
-### 5. Settings & Code Visibility Preferences
-![General Settings](Screenshots/Screenshot%202026-08-15%20163427.png)
+### 5. Local Backup & Migration (Export & Import JSON)
+![Backup & Restore](Screenshots/Screenshot%202026-08-15%20163427.png)
 
 ---
 
-### 6. Local Backup & Migration Tools
-![Backup & Restore](Screenshots/Screenshot%202026-08-15%20163505.png)
+### 6. Fullscreen Dashboard Interface (Large Screen View)
+![Fullscreen Dashboard](Screenshots/Screenshot%202026-08-15%20163505.png)
 
 ---
 
-### 7. About & Privacy Architecture
-![About & Developer Credit](Screenshots/Screenshot%202026-08-15%20163740.png)
+### 7. Browser Right-Click Context Menu ("Add QR to Authenticator")
+![Context Menu Scan](Screenshots/Screenshot%202026-08-15%20163616.png)
 
 ---
 
-### 8. Fullscreen Dashboard Interface
-![Fullscreen Dashboard](Screenshots/Screenshot%202026-08-15%20163616.png)
+### 8. Light Theme Interface (Clean & High Contrast)
+![Light Theme Popup](Screenshots/Screenshot%202026-08-15%20163740.png)
 
 </div>
 
@@ -109,7 +109,7 @@ Unlike traditional authenticators, **Secure 2FA Authenticator** operates complet
    - **Brave**: navigate to `brave://extensions`
 4. Toggle on **Developer mode** in the top right corner.
 5. Click **Load unpacked** in the top left corner.
-6. Select the unzipped `dist` or extracted extension folder.
+6. Select the unzipped folder containing `manifest.json`.
 7. 🎉 **Secure 2FA Authenticator** is now installed and ready to use! Pin it to your extension toolbar for quick access.
 
 ---
