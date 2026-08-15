@@ -1,0 +1,73 @@
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-app);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Numeric & TOTP Display Classes */
+.otp-number {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  user-select: all;
+}
+
+.text-xs {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.text-sm {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.text-base {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-lg {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.text-xl {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
