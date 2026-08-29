@@ -65,28 +65,33 @@ Unlike traditional authenticators, **Secure 2FA Authenticator** operates complet
 
 ---
 
-### 3. Add Account Form (Manual Secret & QR Capture)
+### 3. Add Account (Manual / Paste)
 ![Add Account Form](Screenshots/addaccount.jpeg)
 
 ---
 
-### 4. Settings & Display Customization
+### 4. Scan QR Code & Page Capture Suite
+![Scan QR Code Suite](Screenshots/scanqr.jpeg)
+
+---
+
+### 5. Browser Right-Click Context Menu ("Add QR to Authenticator")
+![Add QR to Authenticator Context Menu](Screenshots/addqr.png)
+
+---
+
+### 6. Settings & Display Customization
 ![Settings Interface](Screenshots/settings.jpeg)
 
 ---
 
-### 5. Local Backup & Migration (Export & Import JSON)
+### 7. Local Backup & Migration (Export & Import JSON)
 ![Backup & Restore](Screenshots/backup.jpeg)
 
 ---
 
-### 6. About & Offline Security Architecture
+### 8. About & Offline Security Architecture
 ![About & Privacy Architecture](Screenshots/about.jpeg)
-
----
-
-### 7. Fullscreen Standalone Dashboard
-![Fullscreen Dashboard](Screenshots/fullscreen-dashboard.jpeg)
 
 </div>
 
