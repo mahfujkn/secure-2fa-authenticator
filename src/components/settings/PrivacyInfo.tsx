@@ -1,3 +1,4 @@
+import React from 'react';
 import { ShieldCheck, WifiOff, DatabaseZap, EyeOff, Lock } from 'lucide-react';
 
 export const PrivacyInfo: React.FC = () => {
@@ -36,14 +37,14 @@ export const PrivacyInfo: React.FC = () => {
           padding: '12px 14px',
           backgroundColor: 'var(--color-primary-subtle)',
           borderRadius: 'var(--radius-lg)',
-          border: '1px solid rgba(59, 130, 246, 0.25)',
+          border: '1px solid rgba(45, 104, 235, 0.25)',
         }}
       >
         <h4 style={{ fontSize: '13px', fontWeight: 600, color: 'var(--color-primary-hover)' }}>
           “Your secrets stay on your device.”
         </h4>
         <p style={{ fontSize: '11px', color: 'var(--color-text-secondary)', marginTop: '4px', lineHeight: 1.4 }}>
-          Secure TOTP Authenticator is engineered from the ground up to guarantee strict offline operation and complete personal privacy.
+          Secure 2FA Authenticator is engineered from the ground up to guarantee strict offline operation and complete personal privacy.
         </p>
       </div>
 
@@ -87,7 +88,7 @@ export const PrivacyInfo: React.FC = () => {
         }}
       >
         <p style={{ fontSize: '12px', fontWeight: 600, color: 'var(--color-text-primary)' }}>
-          Secure TOTP Authenticator v1.0.0
+          Secure 2FA Authenticator v1.0.0
         </p>
         <p style={{ fontSize: '11px', color: 'var(--color-text-muted)' }}>
           Open-source, privacy-first RFC 6238 TOTP browser extension.

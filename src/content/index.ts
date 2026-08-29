@@ -181,11 +181,11 @@ async function scanPageForQrCodes(): Promise<string[]> {
 // Interactive Area Selection Overlay
 function startAreaSelection(): Promise<string | null> {
   return new Promise((resolve) => {
-    const existing = document.getElementById('secure-totp-select-overlay');
+    const existing = document.getElementById('secure-2fa-select-overlay');
     if (existing) existing.remove();
 
     const overlay = document.createElement('div');
-    overlay.id = 'secure-totp-select-overlay';
+    overlay.id = 'secure-2fa-select-overlay';
     overlay.style.position = 'fixed';
     overlay.style.top = '0';
     overlay.style.left = '0';

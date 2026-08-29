@@ -38,7 +38,7 @@ export async function downloadBackupFile(): Promise<void> {
   const dateStr = new Date().toISOString().slice(0, 10);
   const link = document.createElement('a');
   link.href = url;
-  link.download = `secure-totp-backup-${dateStr}.json`;
+  link.download = `secure-2fa-backup-${dateStr}.json`;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

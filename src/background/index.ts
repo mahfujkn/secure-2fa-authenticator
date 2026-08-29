@@ -1,5 +1,5 @@
 /**
- * Secure TOTP Authenticator - Background Service Worker (Manifest V3)
+ * Secure 2FA Authenticator - Background Service Worker (Manifest V3)
  * Handles context menus, script injection, and navigation without remote dependencies.
  */
 

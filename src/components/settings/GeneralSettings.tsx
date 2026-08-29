@@ -36,7 +36,7 @@ export const GeneralSettings: React.FC<GeneralSettingsProps> = ({
             value={settings.theme}
             onChange={(e) => onThemeChange(e.target.value as ThemeMode)}
             options={[
-              { value: 'dark', label: 'Dark Obsidian (Recommended)' },
+              { value: 'dark', label: 'Dark Charcoal (Recommended)' },
               { value: 'light', label: 'Light' },
               { value: 'system', label: 'System' },
             ]}
