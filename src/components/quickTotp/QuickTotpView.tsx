@@ -62,7 +62,7 @@ export const QuickTotpView: React.FC<QuickTotpViewProps> = ({
         style={{
           padding: '12px',
           backgroundColor: 'var(--color-quick-totp-subtle)',
-          border: '1px solid rgba(139, 92, 246, 0.25)',
+          border: '1px solid rgba(22, 184, 166, 0.25)',
           borderRadius: 'var(--radius-lg)',
           display: 'flex',
           flexDirection: 'column',
@@ -139,7 +139,7 @@ export const QuickTotpView: React.FC<QuickTotpViewProps> = ({
         </div>
 
         <textarea
-          rows={3}
+          rows={6}
           value={textInput}
           onChange={(e) => setTextInput(e.target.value)}
           placeholder={`Paste one or multiple Base32 secrets or otpauth:// URIs...\n\nJBSWY3DPEHPK3PXP\nqtrb t4r2 gch4 invo iis4 ret7 5xzz woul\notpauth://totp/GitHub:user@example.com?secret=...`}
@@ -154,8 +154,8 @@ export const QuickTotpView: React.FC<QuickTotpViewProps> = ({
             fontFamily: 'var(--font-mono)',
             outline: 'none',
             resize: 'vertical',
-            minHeight: '74px',
-            maxHeight: '160px',
+            minHeight: '140px',
+            maxHeight: '260px',
           }}
           autoFocus
         />

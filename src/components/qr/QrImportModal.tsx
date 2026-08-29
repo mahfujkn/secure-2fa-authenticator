@@ -493,7 +493,7 @@ export const QrImportModal: React.FC<QrImportModalProps> = ({
               style={{
                 padding: '8px 12px',
                 backgroundColor: 'var(--color-success-subtle)',
-                border: '1px solid rgba(16, 185, 129, 0.25)',
+                border: '1px solid rgba(50, 202, 146, 0.25)',
                 borderRadius: 'var(--radius-md)',
                 display: 'flex',
                 alignItems: 'center',

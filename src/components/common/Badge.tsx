@@ -21,19 +21,19 @@ export const Badge: React.FC<BadgeProps> = ({
         return {
           backgroundColor: 'var(--color-primary-subtle)',
           color: 'var(--color-primary-hover)',
-          border: '1px solid rgba(59, 130, 246, 0.25)',
+          border: '1px solid rgba(45, 104, 235, 0.25)',
         };
       case 'quick-totp':
         return {
           backgroundColor: 'var(--color-quick-totp-subtle)',
           color: 'var(--color-quick-totp-hover)',
-          border: '1px solid rgba(139, 92, 246, 0.25)',
+          border: '1px solid rgba(22, 184, 166, 0.25)',
         };
       case 'success':
         return {
           backgroundColor: 'var(--color-success-subtle)',
           color: 'var(--color-success)',
-          border: '1px solid rgba(16, 185, 129, 0.25)',
+          border: '1px solid rgba(50, 202, 146, 0.25)',
         };
       case 'warning':
         return {

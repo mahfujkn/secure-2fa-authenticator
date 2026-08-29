@@ -143,7 +143,7 @@ export const PopupView: React.FC<PopupViewProps> = ({
         <div
           style={{
             padding: '10px 14px',
-            backgroundColor: 'var(--color-bg-surface)',
+            backgroundColor: 'var(--color-bg-footer)',
             borderTop: '1px solid var(--color-border-subtle)',
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',

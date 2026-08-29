@@ -276,7 +276,8 @@ export const AddAccountModal: React.FC<AddAccountModalProps> = ({
           display: 'grid',
           gridTemplateColumns: '1fr 1fr',
           gap: '4px',
-          backgroundColor: 'var(--color-bg-input)',
+          backgroundColor: 'var(--color-bg-header)',
+          border: '1px solid var(--color-border-subtle)',
           padding: '4px',
           borderRadius: 'var(--radius-md)',
           marginBottom: '16px',
@@ -288,15 +289,16 @@ export const AddAccountModal: React.FC<AddAccountModalProps> = ({
           style={{
             padding: '6px',
             fontSize: '12px',
-            fontWeight: 500,
+            fontWeight: activeTab === 'manual' ? 600 : 500,
             borderRadius: 'var(--radius-sm)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             gap: '6px',
-            backgroundColor: activeTab === 'manual' ? 'var(--color-bg-surface-raised)' : 'transparent',
-            color: activeTab === 'manual' ? 'var(--color-text-primary)' : 'var(--color-text-muted)',
-            boxShadow: activeTab === 'manual' ? 'var(--shadow-sm)' : 'none',
+            backgroundColor: activeTab === 'manual' ? 'var(--color-primary)' : 'transparent',
+            color: activeTab === 'manual' ? '#FFFFFF' : 'var(--color-text-secondary)',
+            boxShadow: activeTab === 'manual' ? '0 2px 6px rgba(45, 104, 235, 0.35)' : 'none',
+            transition: 'all var(--transition-fast)',
           }}
         >
           <KeyRound size={13} />
@@ -309,15 +311,16 @@ export const AddAccountModal: React.FC<AddAccountModalProps> = ({
           style={{
             padding: '6px',
             fontSize: '12px',
-            fontWeight: 500,
+            fontWeight: activeTab === 'qr' ? 600 : 500,
             borderRadius: 'var(--radius-sm)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             gap: '6px',
-            backgroundColor: activeTab === 'qr' ? 'var(--color-bg-surface-raised)' : 'transparent',
-            color: activeTab === 'qr' ? 'var(--color-text-primary)' : 'var(--color-text-muted)',
-            boxShadow: activeTab === 'qr' ? 'var(--shadow-sm)' : 'none',
+            backgroundColor: activeTab === 'qr' ? 'var(--color-primary)' : 'transparent',
+            color: activeTab === 'qr' ? '#FFFFFF' : 'var(--color-text-secondary)',
+            boxShadow: activeTab === 'qr' ? '0 2px 6px rgba(45, 104, 235, 0.35)' : 'none',
+            transition: 'all var(--transition-fast)',
           }}
         >
           <QrCode size={13} />
@@ -410,7 +413,7 @@ export const AddAccountModal: React.FC<AddAccountModalProps> = ({
               style={{
                 padding: '8px 12px',
                 backgroundColor: isDetectedFromUri ? 'var(--color-success-subtle)' : 'var(--color-bg-input)',
-                border: `1px solid ${isDetectedFromUri ? 'rgba(16, 185, 129, 0.25)' : 'var(--color-border-subtle)'}`,
+                border: `1px solid ${isDetectedFromUri ? 'rgba(50, 202, 146, 0.25)' : 'var(--color-border-subtle)'}`,
                 borderRadius: 'var(--radius-md)',
                 display: 'flex',
                 alignItems: 'center',

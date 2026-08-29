@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Sliders, Database, Info, ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Sliders, Database, Info } from 'lucide-react';
 import { UserSettings, ThemeMode } from '../../types/settings';
+import { Button } from '../common/Button';
 import { GeneralSettings } from './GeneralSettings';
 import { BackupSection } from './BackupSection';
 import { AboutSection } from './AboutSection';
-import { Button } from '../common/Button';
 
 export interface SettingsViewProps {
   settings: UserSettings;
@@ -14,8 +14,6 @@ export interface SettingsViewProps {
   onBack: () => void;
 }
 
-type SettingsTab = 'general' | 'backup' | 'about';
-
 export const SettingsView: React.FC<SettingsViewProps> = ({
   settings,
   onUpdateSettings,
@@ -23,10 +21,18 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
   onAccountsChanged,
   onBack,
 }) => {
-  const [activeTab, setActiveTab] = useState<SettingsTab>('general');
+  const [activeTab, setActiveTab] = useState<'general' | 'backup' | 'about'>('general');
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', flex: 1 }} className="animate-fade-in">
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '14px',
+        flex: 1,
+      }}
+      className="animate-fade-in"
+    >
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
         <Button
@@ -49,7 +55,8 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
           display: 'grid',
           gridTemplateColumns: '1fr 1fr 1fr',
           gap: '4px',
-          backgroundColor: 'var(--color-bg-input)',
+          backgroundColor: 'var(--color-bg-header)',
+          border: '1px solid var(--color-border-subtle)',
           padding: '4px',
           borderRadius: 'var(--radius-md)',
         }}
@@ -60,15 +67,16 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
           style={{
             padding: '6px',
             fontSize: '12px',
-            fontWeight: 500,
+            fontWeight: activeTab === 'general' ? 600 : 500,
             borderRadius: 'var(--radius-sm)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             gap: '6px',
-            backgroundColor: activeTab === 'general' ? 'var(--color-bg-surface-raised)' : 'transparent',
-            color: activeTab === 'general' ? 'var(--color-text-primary)' : 'var(--color-text-muted)',
-            boxShadow: activeTab === 'general' ? 'var(--shadow-sm)' : 'none',
+            backgroundColor: activeTab === 'general' ? 'var(--color-primary)' : 'transparent',
+            color: activeTab === 'general' ? '#FFFFFF' : 'var(--color-text-secondary)',
+            boxShadow: activeTab === 'general' ? '0 2px 6px rgba(45, 104, 235, 0.35)' : 'none',
+            transition: 'all var(--transition-fast)',
           }}
         >
           <Sliders size={13} />
@@ -81,15 +89,16 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
           style={{
             padding: '6px',
             fontSize: '12px',
-            fontWeight: 500,
+            fontWeight: activeTab === 'backup' ? 600 : 500,
             borderRadius: 'var(--radius-sm)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             gap: '6px',
-            backgroundColor: activeTab === 'backup' ? 'var(--color-bg-surface-raised)' : 'transparent',
-            color: activeTab === 'backup' ? 'var(--color-text-primary)' : 'var(--color-text-muted)',
-            boxShadow: activeTab === 'backup' ? 'var(--shadow-sm)' : 'none',
+            backgroundColor: activeTab === 'backup' ? 'var(--color-primary)' : 'transparent',
+            color: activeTab === 'backup' ? '#FFFFFF' : 'var(--color-text-secondary)',
+            boxShadow: activeTab === 'backup' ? '0 2px 6px rgba(45, 104, 235, 0.35)' : 'none',
+            transition: 'all var(--transition-fast)',
           }}
         >
           <Database size={13} />
@@ -102,15 +111,16 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
           style={{
             padding: '6px',
             fontSize: '12px',
-            fontWeight: 500,
+            fontWeight: activeTab === 'about' ? 600 : 500,
             borderRadius: 'var(--radius-sm)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             gap: '6px',
-            backgroundColor: activeTab === 'about' ? 'var(--color-bg-surface-raised)' : 'transparent',
-            color: activeTab === 'about' ? 'var(--color-text-primary)' : 'var(--color-text-muted)',
-            boxShadow: activeTab === 'about' ? 'var(--shadow-sm)' : 'none',
+            backgroundColor: activeTab === 'about' ? 'var(--color-primary)' : 'transparent',
+            color: activeTab === 'about' ? '#FFFFFF' : 'var(--color-text-secondary)',
+            boxShadow: activeTab === 'about' ? '0 2px 6px rgba(45, 104, 235, 0.35)' : 'none',
+            transition: 'all var(--transition-fast)',
           }}
         >
           <Info size={13} />

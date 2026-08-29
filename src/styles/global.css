@@ -15,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: var(--color-bg-app);
 }
 
 #root {
@@ -28,7 +29,7 @@ body {
   width: 380px;
   min-width: 380px;
   max-width: 380px;
-  min-height: 540px;
+  min-height: 560px;
   max-height: 600px;
   display: flex;
   flex-direction: column;
@@ -90,4 +91,32 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+}
+
+/* Button Hover & Active States */
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--color-primary-hover) !important;
+}
+
+.btn-primary:active:not(:disabled) {
+  background-color: var(--color-primary-active) !important;
+}
+
+.btn-quick-totp:hover:not(:disabled) {
+  background-color: var(--color-quick-totp-hover) !important;
+}
+
+.btn-quick-totp:active:not(:disabled) {
+  background-color: var(--color-quick-totp-active) !important;
+}
+
+.btn-secondary:hover:not(:disabled),
+.btn-outline:hover:not(:disabled) {
+  background-color: var(--color-bg-hover) !important;
+  border-color: var(--color-border-default) !important;
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background-color: var(--color-bg-hover) !important;
+  color: var(--color-text-primary) !important;
 }

@@ -9,9 +9,9 @@ export interface ServiceIconProps {
 // Generate consistent background color based on name hash
 function getMonogramColor(name: string): { bg: string; text: string } {
   const colors = [
-    { bg: 'rgba(59, 130, 246, 0.18)', text: '#60A5FA' }, // Blue
-    { bg: 'rgba(16, 185, 129, 0.18)', text: '#34D399' }, // Emerald
-    { bg: 'rgba(139, 92, 246, 0.18)', text: '#A78BFA' }, // Purple
+    { bg: 'rgba(45, 104, 235, 0.18)', text: '#366FEE' }, // Keyro Primary Blue
+    { bg: 'rgba(50, 202, 146, 0.18)', text: '#32CA92' }, // Keyro Success Emerald
+    { bg: 'rgba(22, 184, 166, 0.18)', text: '#20C7B5' }, // Keyro Secondary Teal
     { bg: 'rgba(245, 158, 11, 0.18)', text: '#FBBF24' }, // Amber
     { bg: 'rgba(6, 182, 212, 0.18)', text: '#22D3EE' },  // Cyan
     { bg: 'rgba(236, 72, 153, 0.18)', text: '#F472B6' }, // Pink

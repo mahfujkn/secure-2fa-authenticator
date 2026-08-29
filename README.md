@@ -6,14 +6,14 @@
 
 ### 🔒 Privacy-First, 100% Offline 2FA Authenticator for Chromium Browsers
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Manifest V3](https://img.shields.io/badge/Manifest-V3-success.svg)](manifest.json)
-[![100% Offline](https://img.shields.io/badge/Network-100%25%20Offline-brightgreen.svg)](#-privacy--security-guarantee)
-[![Zero Telemetry](https://img.shields.io/badge/Telemetry-Zero%20Tracking-purple.svg)](#-privacy--security-guarantee)
+[![License: MIT](https://img.shields.io/badge/License-MIT-2D68EB.svg)](LICENSE)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-32CA92.svg)](manifest.json)
+[![100% Offline](https://img.shields.io/badge/Network-100%25%20Offline-32CA92.svg)](#-privacy--security-guarantee)
+[![Zero Telemetry](https://img.shields.io/badge/Telemetry-Zero%20Tracking-16B8A6.svg)](#-privacy--security-guarantee)
 [![Built with React 19](https://img.shields.io/badge/Built%20with-React%2019%20%2B%20TypeScript-61dafb.svg)](package.json)
-[![Release Version](https://img.shields.io/badge/Version-v1.0.0-orange.svg)](https://github.com/mahfujkn/secure-2fa-authenticator/releases)
+[![Release Version](https://img.shields.io/badge/Version-v1.0.0-2D68EB.svg)](https://github.com/mahfujkn/secure-2fa-authenticator/releases)
 
-[**Download Release (.ZIP)**](https://github.com/mahfujkn/secure-2fa-authenticator/releases) • [**Features**](#-features) • [**Installation**](#-installation-guide) • [**Screenshots**](#-screenshots) • [**Privacy Architecture**](#-privacy--security-guarantee)
+[**Download Release (.ZIP)**](https://github.com/mahfujkn/secure-2fa-authenticator/releases) • [**Features**](#-features) • [**Screenshots**](#-screenshots) • [**Installation**](#-installation-guide) • [**Privacy Architecture**](#-privacy--security-guarantee)
 
 </div>
 
@@ -42,7 +42,7 @@ Unlike traditional authenticators, **Secure 2FA Authenticator** operates complet
   - Quick eye toggle button and three-dot menu options (*Show Code / Hide Code*).
   - Copying while hidden copies clean numeric OTPs (`482913`) without exposing the code on screen.
 - 🎨 **Modern Security-Focused UI**:
-  - Dark Obsidian (Default), Light, and System themes.
+  - Dark Charcoal (Keyro-inspired Default), Light, and System themes.
   - Compact & Comfortable account list density options.
   - Linear Progress Bar & Circular Ring countdown timers.
   - Pinned Favorites section for frequently accessed accounts.
@@ -55,43 +55,38 @@ Unlike traditional authenticators, **Secure 2FA Authenticator** operates complet
 
 <div align="center">
 
-### 1. Main Authenticator (Dark Obsidian Theme)
-![Main Account List](Screenshots/Screenshot%202026-08-15%20163231.png)
+### 1. Main Authenticator Dashboard (Dark Charcoal Theme)
+![Main Authenticator Dashboard](Screenshots/dashboard.jpeg)
 
 ---
 
 ### 2. Multi-Key Quick TOTP (Instant Zero-Persistence 2FA)
-![Quick TOTP](Screenshots/Screenshot%202026-08-15%20163258.png)
+![Multi-Key Quick TOTP](Screenshots/quicktotp.jpeg)
 
 ---
 
-### 3. QR Code Import & Browser Capture Suite
-![QR Code Import](Screenshots/Screenshot%202026-08-15%20163329.png)
+### 3. Add Account Form (Manual Secret & QR Capture)
+![Add Account Form](Screenshots/addaccount.jpeg)
 
 ---
 
-### 4. Simplified Add Account with Smart Auto-Detection
-![Add Account Form](Screenshots/Screenshot%202026-08-15%20163358.png)
+### 4. Settings & Display Customization
+![Settings Interface](Screenshots/settings.jpeg)
 
 ---
 
 ### 5. Local Backup & Migration (Export & Import JSON)
-![Backup & Restore](Screenshots/Screenshot%202026-08-15%20163427.png)
+![Backup & Restore](Screenshots/backup.jpeg)
 
 ---
 
-### 6. Fullscreen Dashboard Interface (Large Screen View)
-![Fullscreen Dashboard](Screenshots/Screenshot%202026-08-15%20163505.png)
+### 6. About & Offline Security Architecture
+![About & Privacy Architecture](Screenshots/about.jpeg)
 
 ---
 
-### 7. Browser Right-Click Context Menu ("Add QR to Authenticator")
-![Context Menu Scan](Screenshots/Screenshot%202026-08-15%20163616.png)
-
----
-
-### 8. Light Theme Interface (Clean & High Contrast)
-![Light Theme Popup](Screenshots/Screenshot%202026-08-15%20163740.png)
+### 7. Fullscreen Standalone Dashboard
+![Fullscreen Dashboard](Screenshots/fullscreen-dashboard.jpeg)
 
 </div>
 

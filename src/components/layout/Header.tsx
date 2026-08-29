@@ -19,7 +19,7 @@ export const Header: React.FC<HeaderProps> = ({
     <header
       style={{
         padding: isDashboard ? '16px 24px' : '10px 14px',
-        backgroundColor: 'var(--color-bg-surface)',
+        backgroundColor: 'var(--color-bg-header)',
         borderBottom: '1px solid var(--color-border-subtle)',
         display: 'flex',
         alignItems: 'center',
@@ -43,13 +43,13 @@ export const Header: React.FC<HeaderProps> = ({
             width: '30px',
             height: '30px',
             borderRadius: '8px',
-            background: 'linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)',
+            background: 'linear-gradient(135deg, #2D68EB 0%, #2459D6 100%)',
             border: '1px solid rgba(255, 255, 255, 0.15)',
             color: '#ffffff',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            boxShadow: '0 2px 8px rgba(59, 130, 246, 0.35)',
+            boxShadow: '0 2px 8px rgba(45, 104, 235, 0.35)',
             flexShrink: 0,
           }}
         >
@@ -73,7 +73,7 @@ export const Header: React.FC<HeaderProps> = ({
           <span
             style={{
               fontSize: '9.5px',
-              color: 'var(--color-primary-hover)',
+              color: 'var(--color-success)',
               fontWeight: 700,
               letterSpacing: '0.06em',
               textTransform: 'uppercase',

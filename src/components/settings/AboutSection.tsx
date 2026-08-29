@@ -74,7 +74,7 @@ export const AboutSection: React.FC = () => {
           padding: '14px',
           backgroundColor: 'var(--color-primary-subtle)',
           borderRadius: 'var(--radius-lg)',
-          border: '1px solid rgba(59, 130, 246, 0.25)',
+          border: '1px solid rgba(45, 104, 235, 0.25)',
           display: 'flex',
           flexDirection: 'column',
           gap: '4px',
@@ -93,7 +93,7 @@ export const AboutSection: React.FC = () => {
               backgroundColor: 'var(--color-bg-surface-raised)',
               borderRadius: 'var(--radius-pill)',
               color: 'var(--color-primary-hover)',
-              border: '1px solid rgba(59, 130, 246, 0.3)',
+              border: '1px solid rgba(45, 104, 235, 0.3)',
             }}
           >
             v1.0.0
